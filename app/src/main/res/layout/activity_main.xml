@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/btn_quick_sort"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="快速排序"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:id="@+id/btn_bubble_sort"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="冒泡排序"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:id="@+id/btn_heap_sort"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="堆排序"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</LinearLayout>
