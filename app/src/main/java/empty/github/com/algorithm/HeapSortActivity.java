@@ -12,6 +12,23 @@ public class HeapSortActivity extends AlgorithmActivity {
         for (int i = len / 2 - 1; i >= 0; i--) { //堆构造
             adjustHeap(arr, i, len);
         }
+        while (len >=0){
+            swap(arr,0,len--);    //将堆顶元素与尾节点交换后，长度减1，尾元素最大
+            adjustHeap(arr,0,len);    //再次对堆进行调整
+        }
+    }
+
+    /**
+     * 交换
+     * @param arr
+     * @param i
+     * @param len
+     */
+    private void swap(int[] arr,int i,int len){
+        int temp = arr[i];
+        arr[i] = arr[len];
+        arr[len] = temp;
+        printArr(arr);
     }
 
     /**
